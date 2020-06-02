@@ -42,6 +42,12 @@ button {
 	align-items: center;
 }
 
+.visible-sm,
+.visible-md,
+.visible-lg {
+	display: none;
+}
+
 
 
 
@@ -76,13 +82,58 @@ button {
 }
 
 
-.visible-sm,
-.visible-md,
-.visible-lg {
-	display: none;
+
+
+.main {
+	position: relative;
+	width: 100%;
+	background: #f7b516 url('../img/main-bg.jpg') center no-repeat;
+	background-size: cover;
+}
+.main::after {
+	content: '';
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 0;
+	background-color: #000;
+	opacity: .5;
+}
+.main-content {
+	position: relative;
+	padding: 2rem 1rem;
+	z-index: 1;
+	color: #fff;
+}
+.main-title {
+	margin: 0;
+	font-size: 2.6rem;
+	text-transform: uppercase;
+}
+.main-subtitle {
+	font-size: 1.4rem;
+	font-weight: 700;
+	margin-top: 1.8rem;
+	margin-bottom: 4rem;
 }
 
 
+.features {
+	font-size: 1.2rem;
+	line-height: 1.4;
+}
+.features-item {
+	display: flex;
+	align-items: center;
+	margin-bottom: 2rem;
+}
+.features-icon {
+	margin-right: 1.6rem;
+	font-size: 2rem;
+}
 
 
 
@@ -132,6 +183,16 @@ button {
 
 	.header-logo {
 		width: 30%;
+	}
+
+	.main:after {
+		z-index: -1;
+	}
+	.main-content {
+		width: 540px;
+		padding: 4rem 3rem;
+		background-color: #f7b516;
+		color: #000;
 	}
 }
 

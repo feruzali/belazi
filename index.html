@@ -3,19 +3,19 @@
 <head>
 	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Белазы</title>
+	<title>Eddie`s Car</title>
 	<link rel="icon" href="./favicon.ico">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="./css/font-awesome.min.css">
+	<link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
 	<header class="header">
 		<div class="container container-flex">
 			<div class="header-logo">
 				<a href="#">
-					<img src="img/logo-mini.png" alt="Logo" class="xs-only">
-					<img src="img/logo.png" alt="Logo" class="visible-sm">
+					<img src="./img/logo-mini.png" alt="Logo" class="xs-only">
+					<img src="./img/logo.png" alt="Logo" class="visible-sm">
 				</a>
 			</div>
 			<div class="header-time visible-md">
@@ -47,39 +47,39 @@
 					с бесплатной доставкой <br>
 					в Ваш город!
 				</p>
-				<div class="features">
-					<div class="features-item">
-						<div class="features-icon">
+				<div class="main-features">
+					<div class="main-features-item">
+						<div class="main-features-icon">
 							<i class="fa fa-credit-card"></i>
 						</div>
-						<div class="features-descr">
+						<div class="main-features-descr">
 							Дилерские цены - ниже на 20%, <br>
 							работаем без посредников!
 						</div>
 					</div>
-					<div class="features-item">
-						<div class="features-icon">
+					<div class="main-features-item">
+						<div class="main-features-icon">
 							<i class="fa fa-truck "></i>
 						</div>
-						<div class="features-descr">
+						<div class="main-features-descr">
 							Срочная бесплатная доставка <br>
 							за 7 дней
 						</div>
 					</div>
-					<div class="features-item">
-						<div class="features-icon">
+					<div class="main-features-item">
+						<div class="main-features-icon">
 							<i class="fa fa-calendar "></i>
 						</div>
-						<div class="features-descr">
+						<div class="main-features-descr">
 							Даем рассрочку <br>
 							6 месяцев 
 						</div>
 					</div>
-					<div class="features-item">
-						<div class="features-icon">
+					<div class="main-features-item">
+						<div class="main-features-icon">
 							<i class="fa fa-check-square-o "></i>
 						</div>
-						<div class="features-descr">
+						<div class="main-features-descr">
 							Даем гарантию <br>
 							от 12 месяцев  
 						</div>
@@ -88,5 +88,65 @@
 			</div>
 		</div>
 	</main>
+
+	<section class="price" id="price">
+		<div class="container">
+			<h2 class="price-title">
+				Получите прайс прямо сейчас <br>
+				на электронную почту!
+			</h2>
+			<form action="#" class="price-form">
+				<div class="price-form__inputs">
+					<input type="email" class="price-form__input" placeholder="Введите ваш e-mail" required>
+					<input type="tel" class="price-form__input" placeholder="Введите ваш телефон" required>
+				</div>
+				<div class="price-form__descr">
+					<span>Прайс придет к Вам на почту <br>
+					в течение 5 минут!
+					</span>
+					<img class="visible-lg" src="./img/clock.png" alt="Clock">
+					<button class="price-form__btn" type="submit">Получить прайс</button>
+				</div>
+			</form>
+		</div>
+	</section>
+
+	<section class="features" id="features">
+		<div class="container">
+			<h2 class="section-title">Вам не придется ждать!</h2>
+			<p class="section-subtitle">
+				Любые запчасти для всех моделей Белаз <br>
+				всегда в наличии!
+			</p>
+			<div class="row">
+				<div class="col-4">
+					<img src="./img/features/feature-1.png" alt="Engine">
+					<p>
+						Любые типы деталей <br>
+						от шайбы до двигателя!  
+					</p>
+				</div>
+				<div class="col-4">
+					<img src="./img/features/feature-2.png" alt="Truck">
+					<p>
+						Все модификации Белаз <br>
+						от 45т до 450 т
+					</p>
+				</div>
+				<div class="col-4">
+					<img src="./img/features/feature-3.png" alt="Calendar">
+					<p>
+						Отгружаем в день заказа!
+					</p>
+				</div>
+				<div class="col-4">
+					<img src="./img/features/feature-4.png" alt="Map">
+					<p>
+						Доставим в любое место!
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
 </body>
 </html>

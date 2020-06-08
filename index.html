@@ -97,15 +97,15 @@
 			</h2>
 			<form action="#" class="price-form">
 				<div class="price-form__inputs">
-					<input type="email" class="price-form__input" placeholder="Введите ваш e-mail" required>
-					<input type="tel" class="price-form__input" placeholder="Введите ваш телефон" required>
+					<input type="email" class="form__input" placeholder="Введите ваш e-mail" required>
+					<input type="tel" class="form__input" placeholder="Введите ваш телефон" required>
 				</div>
 				<div class="price-form__descr">
 					<span>Прайс придет к Вам на почту <br>
 					в течение 5 минут!
 					</span>
 					<img class="visible-lg" src="./img/clock.png" alt="Clock">
-					<button class="price-form__btn" type="submit">Получить прайс</button>
+					<button class="form__btn" type="submit">Получить прайс</button>
 				</div>
 			</form>
 		</div>
@@ -120,30 +120,111 @@
 			</p>
 			<div class="row">
 				<div class="col-4">
-					<img src="./img/features/feature-1.png" alt="Engine">
+					<img class="features__img" src="./img/features/feature-1.png" alt="Engine">
 					<p>
 						Любые типы деталей <br>
 						от шайбы до двигателя!  
 					</p>
 				</div>
 				<div class="col-4">
-					<img src="./img/features/feature-2.png" alt="Truck">
+					<img class="features__img" src="./img/features/feature-2.png" alt="Truck">
 					<p>
 						Все модификации Белаз <br>
 						от 45т до 450 т
 					</p>
 				</div>
 				<div class="col-4">
-					<img src="./img/features/feature-3.png" alt="Calendar">
+					<img class="features__img" src="./img/features/feature-3.png" alt="Calendar">
 					<p>
 						Отгружаем в день заказа!
 					</p>
 				</div>
 				<div class="col-4">
-					<img src="./img/features/feature-4.png" alt="Map">
+					<img class="features__img" src="./img/features/feature-4.png" alt="Map">
 					<p>
 						Доставим в любое место!
 					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="detail" id="detail">
+		<div class="container">
+			<h2 class="section-title">
+				Ищете конкретную деталь?
+			</h2>
+			<p class="section-subtitle">
+				Если у Вас есть артикул - введите его в поле ниже и получите цену <br>
+				ПРЯМО СЕЙЧАС!
+			</p>
+			<form action="#" class="detail-form">
+				<input type="text" class="form__input" placeholder="Введите ваш e-mail" required>
+				<input type="tel" class="form__input" placeholder="Введите ваш телефон" required>
+				<button type="submit" class="form__btn btn_yellow">Узнать цену</button>
+			</form>
+			<p>*Мы перезвоним вам в течение 3 минут и назовем цену детали!</p>
+			<p>Или Вы можете перезвонить нам сами:</p>
+			<b class="detail__number"> +7 (818) 247-47-25</b>
+		</div>
+	</section>
+
+	<section class="warranty" id="warranty">
+		<div class="container">
+			<h2 class="section-title">
+				Мы гарантируем сохранность деталей <br>
+				во время перевозки!
+			</h2>
+			<div class="row">
+				<div class="col-3">
+					<img src="./img/warranty/warranty-1.png" alt="Document">
+					<p class="warranty-item__descr">Гарантия на целостность поставки прописана в договоре</p>
+					<a class="warranty-item__more" href="#">Подробнее</a>
+				</div>
+				<div class="col-3">
+					<img src="./img/warranty/warranty-2.png" alt="Factory">
+					<p class="warranty-item__descr">Каждая запчасть доставляется с завода в жесткой упаковке</p>
+					<a class="warranty-item__more" href="#">Подробнее</a>
+				</div>
+				<div class="col-3">
+					<img src="./img/warranty/warranty-3.png" alt="Quality control">
+					<p class="warranty-item__descr">Дополнительный контроль качества нашими специалистами</p>
+					<a class="warranty-item__more" href="#">Подробнее</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="bonus" id="bonus">
+		<div class="container">
+			<h2 class="section-title">
+				У нас разработаны бонусные системы <br>
+			  	и скидки для наших клиентов
+			</h2>
+			<div class="row">
+				<div class="col-4">
+					<div class="bonus-item__img">
+						10%
+					</div>
+					<p class="bonus-item__descr">Дополнительная скидка 10%  на вторую запчасть и любые последующие</p>
+				</div>
+				<div class="col-4">
+					<div class="bonus-item__img">
+						20%
+					</div>
+					<p class="bonus-item__descr">Скидка 20% при заключении  договора на годовое сервисное обслуживание</p>
+				</div>
+				<div class="col-4">
+					<div class="bonus-item__img">
+						<i class="fa fa-truck"></i>
+					</div>
+					<p class="bonus-item__descr">Бесплатная доставка  по всей России для всех клиентов </p>
+				</div>
+				<div class="col-4">
+					<div class="bonus-item__img">
+						<i class="fa fa-user-o"></i>
+					</div>
+					<p class="bonus-item__descr">Бесплатная круглосуточная  техническая поддержка</p>
 				</div>
 			</div>
 		</div>

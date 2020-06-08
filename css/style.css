@@ -53,6 +53,10 @@ input {
 
 .col-4,
 .col-3 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
 	margin-top: 2rem;
 	margin-bottom: 2rem;
 }
@@ -66,12 +70,18 @@ input {
 
 section {
 	padding: 3rem 0;
+	text-align: center;
 }
 .section-title {
 	font-size: 2.4rem;
 }
 .section-subtitle {
 	font-size: 1.4rem;
+	margin-bottom: 4rem;
+}
+
+.btn_yellow {
+	background-color: #f7b516;
 }
 
 
@@ -175,7 +185,7 @@ section {
 	flex-direction: column;
 	align-items: center;
 }
-.price-form__input {
+.form__input {
 	width: 280px;
 	margin-bottom: 1.6rem;
 	padding: 1.4rem;
@@ -188,7 +198,7 @@ section {
 	align-items: center;
 	line-height: 1.4;
 }
-.price-form__btn {
+.form__btn {
 	width: 200px;
 	margin-top: 1rem;
 	padding: 1.2rem;
@@ -201,7 +211,6 @@ section {
 
 
 
-
 .features {	
 	text-align: center;
 	background-color: #08243e;
@@ -210,37 +219,95 @@ section {
 }
 
 
+.detail {
+	color: #fff;
+	background-color: #123150;
+}
+.detail-form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 3rem;
+}
+.detail__number {
+	font-size: 1.4rem;
+}
+
+.warranty-item__descr {
+	max-width: 80%;
+	margin: 1.6rem auto;
+	font-size: 1.4rem;
+}
+.warranty-item__more {
+	font-size: 1.2rem;
+	color: #000;	
+	font-weight: 700;
+	text-transform: uppercase;
+	text-decoration: underline;
+}
+
+.bonus {
+	background-color: #08243e;
+	color: #fff;
+}
+.bonus-item__img {
+	width: 150px;
+	height: 150px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 3rem;
+	font-weight: 700;
+	border-radius: 50%;
+	border: 2px solid #fff;
+	background-color: transparent;
+}
+.bonus-item__descr {
+	max-width: 60%;
+	font-size: 1.4rem;
+}
+
+
 
 @media (min-width: 576px) {
-  .container {
-    max-width: 540px;
-  }
+	.container {
+		max-width: 540px;
+	}
 
-  .row {
-  	padding: 0;
-  	flex-direction: row;
-  	flex-wrap: wrap;
-  	justify-content: space-between;
-  }
+	.row {
+		padding: 0;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: baseline;
+	}
 
-  .col-4 {
-	width: 45%;
-  }
+	.col-4 {
+		width: 45%;
+	}
 
-  .col-4 > img {
-  	min-height: 100px;
-  }
+	.col-3 {
+		margin: 2rem auto;
+	}
 
-  .xs-only {
-  	display: none;
-  }
-  .visible-sm {
-  	display: block;
-  }
+	.xs-only {
+		display: none;
+	}
+	.visible-sm {
+		display: block;
+	}
 
-  .price-form__input {
-  	width: 360px;
-  }
+	.features__img {
+		min-height: 100px;
+	}
+
+	.form__input {
+		width: 360px;
+	}
+
+	.bonus-item__descr {
+		max-width: 90%;
+	}
 }
 
 @media (min-width: 768px) {
@@ -251,13 +318,28 @@ section {
 	.container {
 		max-width: 720px;
 	}
+
+	.col-3 {
+		width: 50%;
+	}
+
 	.hidden-md {
 		display: none;	
 	}
 	.visible-md {
 		display: block;
 	}
+	
+	.warranty-item__descr {
+		max-width: 90%;
+		font-size: 1.2rem;
+	}
 
+	.bonus-item__descr {
+		max-width: 100%;
+		font-size: 1.2rem;
+	}
+	
 }
 
 @media (min-width: 992px) {
@@ -267,14 +349,16 @@ section {
 	.container {
 		max-width: 960px;
 	}
-
+	.col-3 {
+		width: 33%;
+	}
+	
 	.hidden-lg {
 		display: none;
 	}
 	.visible-lg {
 		display: block;
 	}
-
 
 	.header-logo {
 		width: 30%;
@@ -290,8 +374,6 @@ section {
 		color: #000;
 	}
 
-
-
 	.price {
 		background: url('../img/price-bg.jpg') center no-repeat;
 		background-size: cover;
@@ -302,11 +384,14 @@ section {
 		flex-direction: row;
 		justify-content: flex-end;
 	}
-	.price-form__input,
-	.price-form__btn {
+	.form__input,
+	.form__btn {
 		width: 360px;
+		margin: 0;
 		margin-left: 2rem;
-		margin-top: 0;
+	}
+	.price-form__descr {
+		margin-top: 2rem;
 	}
 	.price-form__descr span {
 		margin-right: 2rem;
@@ -315,13 +400,27 @@ section {
 	.features {
 		font-size: 1.2rem;
 	}
+
+	.detail {
+		background: url('../img/detail-bg.jpg') center no-repeat;
+		background-size: cover;
+	}
+	.detail-form {
+		flex-direction: row;
+		align-items: center;
+	}
+
+	.warranty-item__descr {
+		max-width: 100%;
+		font-size: 1rem;
+	}
+
 }
 
 @media (min-width: 1200px) {
 	.container {
 		max-width: 1140px;
 	}
-
 	.col-4 {
 		width: 25%;
 	}

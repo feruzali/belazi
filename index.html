@@ -161,7 +161,7 @@
 			<form action="#" class="detail-form">
 				<input type="text" class="form__input" placeholder="Введите ваш e-mail" required>
 				<input type="tel" class="form__input" placeholder="Введите ваш телефон" required>
-				<button type="submit" class="form__btn btn_yellow">Узнать цену</button>
+				<button type="submit" class="form__btn btn_yellow" data-target="call">Узнать цену</button>
 			</form>
 			<p>*Мы перезвоним вам в течение 3 минут и назовем цену детали!</p>
 			<p>Или Вы можете перезвонить нам сами:</p>
@@ -179,17 +179,14 @@
 				<div class="col-3">
 					<img src="./img/warranty/warranty-1.png" alt="Document">
 					<p class="warranty-item__descr">Гарантия на целостность поставки прописана в договоре</p>
-					<a class="warranty-item__more" href="#">Подробнее</a>
 				</div>
 				<div class="col-3">
 					<img src="./img/warranty/warranty-2.png" alt="Factory">
 					<p class="warranty-item__descr">Каждая запчасть доставляется с завода в жесткой упаковке</p>
-					<a class="warranty-item__more" href="#">Подробнее</a>
 				</div>
 				<div class="col-3">
 					<img src="./img/warranty/warranty-3.png" alt="Quality control">
 					<p class="warranty-item__descr">Дополнительный контроль качества нашими специалистами</p>
-					<a class="warranty-item__more" href="#">Подробнее</a>
 				</div>
 			</div>
 		</div>
@@ -241,7 +238,7 @@
 			</div>
 			<form action="#" class="consultation-form">
 				<input type="tel" class="form__input" placeholder="Введите ваш телефон ">
-				<button class="form__btn btn_yellow">Перезвонить сейчас</button>
+				<button class="form__btn btn_yellow" data-target="call">Перезвонить сейчас</button>
 			</form>
 		</div>
 	</section>
@@ -264,5 +261,21 @@
 			</div>
 		</div>
 	</footer>
+
+	<div class="popup-overlay">
+		<div class="popup">
+			<div id="close" class="popup-close">
+				&times;
+			</div>
+			<div class="popup-header">
+				Спасибо!
+			</div>
+			<div class="popup-content">
+				
+			</div>
+		</div>
+	</div>
+
+	<script src="js/script.js"></script>
 </body>
 </html>

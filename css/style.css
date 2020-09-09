@@ -237,13 +237,6 @@ section {
 	margin: 1.6rem auto;
 	font-size: 1.4rem;
 }
-.warranty-item__more {
-	font-size: 1.2rem;
-	color: #000;	
-	font-weight: 700;
-	text-transform: uppercase;
-	text-decoration: underline;
-}
 
 .bonus {
 	background-color: #08243e;
@@ -311,6 +304,67 @@ section {
 	font-size: 1.4rem;
 }
 
+.popup-overlay {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+	background-color: rgba(0, 0, 0, .5);
+	overflow: hidden;
+}
+.popup {
+	position: relative;
+	top: 50%;
+	left: 50%;
+	width: 300px;
+	height: 200px;
+	margin-left: -150px;
+	margin-top: -100px;
+	background-color: #fff;
+	text-align: center;
+}
+.popup-close {
+	position: absolute;
+	top: -30px;
+	right: -24px;
+	color: #fff;
+	font-size: 3.2rem;
+	cursor: pointer;
+}
+.popup-header {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+	height: 25%;
+	background-color: #f7b516;
+	color: #fff;
+	font-size: 1.8rem;
+}
+.popup-content{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+	height: 75%;
+	padding-bottom: 1rem;
+	background-color: #1669b3;
+	font-size: 2.2rem;
+	color: #fff;
+}
 
 @media (min-width: 576px) {
 	html {

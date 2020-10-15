@@ -1,23 +1,17 @@
 'use strict';
 
-let popupOverlay = document.querySelector('.popup-overlay'),
-	popupContent = document.querySelector('.popup-content'),
-	callBtns = document.querySelectorAll('button[data-target="call"]'),
-	closeBtn = document.getElementById('close');
-
-let callText = 'Мы скоро с вами свяжемся!';
-
-
-let openPopup = (text) => {
-	popupContent.textContent = text;
-	popupOverlay.style.display = 'flex';
-}
-
+let popup = document.querySelector('.popup-thanks'),
+	popupCloseBtn = document.querySelector('.popup-thanks-close'),
+	callBtns = document.querySelectorAll('form[data-target="call"]');
 
 callBtns.forEach(callBtn => {
-	callBtn.addEventListener('click', openPopup(callText));
+	callBtn.addEventListener('submit', function(event) {
+		event.preventDefault();
+		this.reset();
+		popup.style.display = 'block';
+	});
 });
 
-closeBtn.addEventListener('click', () => {
-	popupOverlay.style.display = '';
+popupCloseBtn.addEventListener('click', () => {
+	popup.style.display = '';
 });
